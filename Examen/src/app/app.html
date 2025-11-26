@@ -1,1 +1,50 @@
-<router-outlet/>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/home">
+            <span class="navbar-logo">🐉</span>
+            Dragon Ball
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home" routerLinkActive="active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/personajes" routerLinkActive="active">Personajes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<main class="main-content">
+    <router-outlet/>
+</main>
+
+
+<footer class="footer bg-dark text-light py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Dragon Ball App</h5>
+                <p>Explora el universo de Dragon Ball y sus increíbles personajes</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <h6>Enlaces rápidos</h6>
+                <ul class="list-unstyled">
+                    <li><a routerLink="/home" class="text-light text-decoration-none">Inicio</a></li>
+                    <li><a routerLink="/personajes" class="text-light text-decoration-none">Personajes</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-3">
+        <div class="text-center">
+            <small>&copy; 2024 Dragon Ball API Project. Todos los derechos reservados.</small>
+        </div>
+    </div>
+</footer>

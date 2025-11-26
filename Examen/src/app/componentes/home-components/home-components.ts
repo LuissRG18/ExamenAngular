@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home-components',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home-components.html',
   styleUrl: './home-components.css',
 })
-export class HomeComponents {
-  onStartAdventure(): void {
-    console.log('¡Aventura iniciada! Goku está listo para combatir...');
-    alert('¡Bienvenido a tu aventura en Dragon Ball! 🐉');
-  }
-}
+export class HomeComponents {}

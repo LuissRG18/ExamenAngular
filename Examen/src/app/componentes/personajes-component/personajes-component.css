@@ -35,7 +35,7 @@
     border-color: #ff9500;
 }
 
-/* Contenedor de Imagen */
+
 .personaje-image-container {
     position: relative;
     overflow: hidden;
@@ -46,7 +46,7 @@
 .personaje-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
@@ -54,7 +54,7 @@
     transform: scale(1.1);
 }
 
-/* Overlay en la Imagen */
+
 .personaje-overlay {
     position: absolute;
     top: 0;
@@ -85,7 +85,7 @@
     border-color: #ff9500;
 }
 
-/* Nombre del Personaje */
+
 .personaje-name {
     color: #ff6b00;
     font-weight: bold;
@@ -95,7 +95,7 @@
     letter-spacing: 1px;
 }
 
-/* Información General */
+
 .personaje-info {
     background-color: rgba(255, 107, 0, 0.1);
     padding: 1rem;
@@ -121,7 +121,7 @@
     text-transform: capitalize;
 }
 
-/* Información de Ki */
+
 .ki-info {
     background-color: rgba(100, 200, 255, 0.1);
     padding: 1rem;
@@ -147,7 +147,7 @@
     font-family: 'Courier New', monospace;
 }
 
-/* Descripción */
+
 .personaje-description {
     color: #d0d0d0;
     font-size: 0.85rem;
@@ -156,7 +156,7 @@
     overflow-y: auto;
 }
 
-/* Planeta de Origen */
+
 .origin-planet {
     background-color: rgba(100, 255, 150, 0.1);
     padding: 1rem;
@@ -198,7 +198,7 @@
     color: #fff;
 }
 
-/* Transformaciones */
+
 .transformations {
     background-color: rgba(255, 200, 100, 0.1);
     padding: 1rem;
@@ -243,7 +243,7 @@
     object-fit: cover;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .personajes-title {
         font-size: 2rem;
